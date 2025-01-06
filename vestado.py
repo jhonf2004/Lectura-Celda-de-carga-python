@@ -140,10 +140,10 @@ class MainApp(QMainWindow):
 
     def update_connection_status(self, status):
         if status == "Conectado":
-            self.ui.lblEstadoIndicador.setStyleSheet("background-color: rgb(20, 180, 60); border-radius: 10px;")
+            self.ui.lblEstadoIndicador.setStyleSheet("background-color: rgb(20, 180, 60); border-radius: 8px; color: rgb(255, 255, 255); ")
             self.ui.lblEstadoIndicador.setText("Conectado")
         elif status == "Desconectado":
-            self.ui.lblEstadoIndicador.setStyleSheet("background-color: rgb(255, 0, 0); border-radius: 10px;")
+            self.ui.lblEstadoIndicador.setStyleSheet("background-color: rgb(255, 0, 0); border-radius: 8px; color: rgb(255, 255, 255); ")
             self.ui.lblEstadoIndicador.setText("Desconectado")
         if status == "Desconectado":
             self.reset_min_max()
